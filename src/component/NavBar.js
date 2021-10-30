@@ -1,6 +1,4 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/js/dist/collapse";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 
 const NavBar = (props) => {
@@ -11,10 +9,10 @@ const NavBar = (props) => {
 
    return (
       <Router>
-         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+         <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
             <div className="container-fluid mx-3">
                <Link className="navbar-brand" to="/">
-                  <div className="fw-bold text-danger display-5">Netflix</div>
+                  <div className="fw-bold text-danger display-6">Netflix</div>
                </Link>
                <button
                   className="navbar-toggler border-0"
